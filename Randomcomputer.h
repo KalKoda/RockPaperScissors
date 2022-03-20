@@ -1,6 +1,6 @@
 #pragma once
 
-#include "computer.h"
+#include "Computer.h"
 
 class RandomComputer : public Computer{
     public:
@@ -10,7 +10,8 @@ class RandomComputer : public Computer{
         //decstructor
         ~RandomComputer();
 
-        void RandomMove();
+        //void RandomMove();
+        void CheckTurnAndDecide(int count);
 
 
 

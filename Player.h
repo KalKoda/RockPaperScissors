@@ -1,3 +1,4 @@
+#pragma once
 
 class Player{
 	private:
@@ -7,5 +8,7 @@ class Player{
         Player();
         int getChoice();
         void setChoice(int num);
+        int getAmmMoves();
+        void addMoveAmm(int count);
 
     };

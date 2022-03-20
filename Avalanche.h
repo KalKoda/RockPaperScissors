@@ -1,6 +1,6 @@
 #pragma once
 
-#include "computer.h"
+#include "Computer.h"
 
 class AvalancheComputer : public Computer{
     public:

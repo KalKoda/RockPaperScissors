@@ -1,5 +1,5 @@
 
-#include "computer.h"
+#include "Computer.h"
 using namespace std;
 
 

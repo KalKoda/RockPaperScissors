@@ -1,19 +1,23 @@
 //has a random choice
 #include <time.h>
-#include "randomcomputer.h"
+#include "Randomcomputer.h"
 #include <iostream>
 
 RandomComputer::RandomComputer(){
-    //int choice = 0;
-}
-
-
-void RandomComputer::RandomMove(){
     srand(time(NULL));
     int number = (rand() % 3)+1;
     setChoice(number);
 }
 
+
 RandomComputer::~RandomComputer(){
 
+}
+
+void RandomComputer::CheckTurnAndDecide(int count){
+    if(getAmmMoves() != count){
+        srand(time(NULL));
+        int number = (rand() % 3)+1;
+        setChoice(number);
+    }
 }

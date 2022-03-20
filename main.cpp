@@ -1,13 +1,14 @@
-#include "human.h"
-#include "computer.h"
-#include "referee.h"
-#include "randomcomputer.h"
-#include "avalanche.h"
+#include "Human.h"
+#include "Computer.h"
+#include "Referee.h"
+#include "Randomcomputer.h"
+#include "Avalanche.h"
 #include "Bureaucrat.h"
 #include "Toolbox.h"
 #include "Crechendo.h"
 #include "PaperDoll.h"
 #include "FistfullODollars.h"
+#include "Tournament.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -15,14 +16,15 @@ using namespace std;
 
 int main(){
     int count =0;
-    Human player1;
-	//RandomComputer Computer1;
-	//AvalancheComputer Computer1;
-	//BureaucratComputer Computer1;
-	//ToolboxComputer Computer1;
-	//CrechendoComputer Computer1;
-	//PaperDollComputer Computer1;
-	FistfullODollarsComputer Computer1;
+    //player player;
+    //Human player1;
+	//RandomComputer player7;
+	AvalancheComputer player1;
+	BureaucratComputer player2;
+	ToolboxComputer player3;
+	CrechendoComputer player4;
+	PaperDollComputer player5;
+	FistfullODollarsComputer player6;
 	Referee RPCRef;
 
     int x=0;
@@ -33,25 +35,24 @@ int main(){
             break;
         }
 
-        ///HUMAN/////
-
+        /*
         player1.ask_move(); //takes human's input
-        RPCRef.Player1Move(player1.getChoice());
+        RPCRef.setPlayer1Move(player1.getChoice());
+        RPCRef.setPlayer2Move(Computer1.getChoice());
 
-        ///COMPUTER///
 
-        //Computer1.RandomMove(); //generates random number between 1-3
-        RPCRef.Player2Move(Computer1.getRobChoice());
+
         count++;
         cout << "Count is " << count << endl;
 
-        Computer1.addMoveAmm(count);
         Computer1.CheckTurnAndDecide(count+1);  //+1 skips makes it not start at 0 idk why but it works
+        Computer1.addMoveAmm(count); ///only for ones that change turn on loop
+
 
 
         ///Current tornament///
-        cout << "human move is... " << RPCRef.determineMove(RPCRef.getPlayer1Move()) << endl;
-        cout << "and Computer move is... " << RPCRef.determineMove(RPCRef.getPlayer2Move()) << endl;
+        cout << "human move is... " << RPCRef.determineP1Move(RPCRef.getPlayer1Move()) << endl;
+        cout << "and Computer move is... " << RPCRef.determineP2Move(RPCRef.getPlayer2Move()) << endl;
 
         RPCRef.check_winner();
         cout << "the winner is... " << RPCRef.getWinner() << "!!! \n";
@@ -61,7 +62,7 @@ int main(){
         }
 
         std::cout<<"exited: "<<std::endl;
-
+        */
 
 
 

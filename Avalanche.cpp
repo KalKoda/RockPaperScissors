@@ -1,5 +1,5 @@
 
-#include "avalanche.h"
+#include "Avalanche.h"
 
 
 AvalancheComputer::AvalancheComputer(){

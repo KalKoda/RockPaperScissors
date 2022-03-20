@@ -1,4 +1,5 @@
-
+using namespace std;
+#include "Player.h"
 
 Player::Player(){
 
@@ -8,7 +9,7 @@ void Player::setChoice(int num){
 	this->choice = num;
 }
 
-int Plater::getChoice(){
+int Player::getChoice(){
     return choice;
 }
 

@@ -18,7 +18,8 @@ class Referee{
 	    int getPlayer1Move();
 	    int getPlayer2Move();
 
-		std::string determineMove(int num);
+		std::string determineP1Move(int num);
+		std::string determineP2Move(int num);
 
 	    void check_winner();
 

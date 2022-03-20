@@ -1,4 +1,4 @@
-#include "referee.h"
+#include "Referee.h"
 #include <iostream>
 using namespace std;
 #include <string>
@@ -23,7 +23,22 @@ int Referee::getPlayer2Move(){
     return Player2Move;
 }
 
-std::string Referee::determineMove(int num){
+std::string Referee::determineP1Move(int num){
+    if (num == 1){
+        return "rock";
+    }
+    if (num== 2){
+        return "paper";
+    }
+    if (num == 3){
+        return "scissors";
+    }
+    else {
+        return "wrong input try again";
+    }
+}
+
+std::string Referee::determineP2Move(int num){
     if (num == 1){
         return "rock";
     }
