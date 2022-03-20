@@ -56,11 +56,11 @@ std::string Referee::determineP2Move(int num){
 
 
 void Referee::check_winner(){ //Gotta make this follow the rules
-    if (Player1Move == 1 && Player2Move ==3 || Player1Move == 2 && Player2Move ==1 || Player1Move == 3 && Player2Move ==2 ){
+    if ((Player1Move == 1 && Player2Move ==3 )|| (Player1Move == 2 && Player2Move ==1 )|| (Player1Move == 3 && Player2Move ==2 )){
         this->winnerName = "Human";
 
     }
-    if (Player1Move == 3 && Player2Move ==1 || Player1Move == 1 && Player2Move ==2 || Player1Move == 2 && Player2Move ==3){
+    if ((Player1Move == 3 && Player2Move ==1 )|| (Player1Move == 1 && Player2Move ==2 )||( Player1Move == 2 && Player2Move ==3)){
         this->winnerName = "Computer";
     }
     if (Player1Move == Player2Move){
