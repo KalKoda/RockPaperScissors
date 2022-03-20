@@ -5,7 +5,7 @@
 #include "Avalanche.h"
 #include "Bureaucrat.h"
 #include "Toolbox.h"
-#include "Crechendo.h"
+#include "Crescendo.h"
 #include "PaperDoll.h"
 #include "FistfullODollars.h"
 #include "Tournament.h"
@@ -17,15 +17,15 @@ using namespace std;
 int main(){
     int count =0;
     //player player;
-    //Human player1;
-	//RandomComputer player7;
-	AvalancheComputer player1;
+    Human player1;
+	RandomComputer Computer1;
+	/*AvalancheComputer player1;
 	BureaucratComputer player2;
 	ToolboxComputer player3;
-	CrechendoComputer player4;
+	CrescendoComputer player4;
 	PaperDollComputer player5;
 	FistfullODollarsComputer player6;
-	Referee RPCRef;
+	Referee RPCRef;*/
 
     int x=0;
     while (true){
@@ -35,7 +35,7 @@ int main(){
             break;
         }
 
-        /*
+
         player1.ask_move(); //takes human's input
         RPCRef.setPlayer1Move(player1.getChoice());
         RPCRef.setPlayer2Move(Computer1.getChoice());
@@ -62,7 +62,6 @@ int main(){
         }
 
         std::cout<<"exited: "<<std::endl;
-        */
 
 
 

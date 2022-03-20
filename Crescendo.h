@@ -2,10 +2,10 @@
 
 #include "Computer.h"
 
-class CrechendoComputer : public Computer{
+class CrescendoComputer : public Computer{
     public:
         //constructor
-        CrechendoComputer();
+        CrescendoComputer();
 
         void CheckTurnAndDecide(int count);
 

@@ -1,12 +1,12 @@
 
-#include "Crechendo.h"
+#include "Crescendo.h"
 
 
-CrechendoComputer::CrechendoComputer(){
+CrescendoComputer::CrescendoComputer(){
     setChoice(1);
 }
 
-void CrechendoComputer::CheckTurnAndDecide(int count){
+void CrescendoComputer::CheckTurnAndDecide(int count){
     if (count % 3 ==1){
         setChoice(1);
     }
