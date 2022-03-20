@@ -1,6 +1,6 @@
 //has a random choice
 #include <time.h>
-#include "Randomcomputer.h"
+#include "RandomComputer.h"
 #include <iostream>
 
 RandomComputer::RandomComputer(){

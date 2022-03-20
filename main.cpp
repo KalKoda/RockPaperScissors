@@ -1,7 +1,7 @@
 #include "Human.h"
 #include "Computer.h"
 #include "Referee.h"
-#include "Randomcomputer.h"
+#include "RandomComputer.h"
 #include "Avalanche.h"
 #include "Bureaucrat.h"
 #include "Toolbox.h"
@@ -24,8 +24,8 @@ int main(){
 	ToolboxComputer player3;
 	CrescendoComputer player4;
 	PaperDollComputer player5;
-	FistfullODollarsComputer player6;
-	Referee RPCRef;*/
+	FistfullODollarsComputer player6;*/
+	Referee RPCRef;
 
     int x=0;
     while (true){
